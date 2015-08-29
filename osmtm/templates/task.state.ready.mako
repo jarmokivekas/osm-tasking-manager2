@@ -12,14 +12,14 @@
        data-original-title="${unlocktip}"
        class="btn btn-default"
        href="${request.route_path('task_unlock', task=task.id, project=task.project_id)}">
-        ${_('Unlock')}
+        ${_('Stop working on task')}
     </a>
     <button type="submit"
       rel="tooltip"
       data-container="body"
       data-original-title="${donetip}"
       class="btn btn-success">
-      <i class="glyphicon glyphicon-ok icon-white"></i> ${_('Mark task as done')}
+      <i class="glyphicon glyphicon-ok icon-white"></i> ${_('Submit for review')}
     </button>
   </form>
 % endif
